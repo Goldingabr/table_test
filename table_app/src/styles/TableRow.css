@@ -1,0 +1,7 @@
+.user-row {
+    cursor: pointer;
+}
+
+.user-row:hover {
+    background-color: #a5a5a5;
+}

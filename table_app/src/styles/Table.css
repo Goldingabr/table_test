@@ -1,0 +1,43 @@
+.table-container {
+    position: relative;
+    overflow-x: auto;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    position: relative;
+    overflow: hidden; /* Скрыть содержимое, которое выходит за пределы */
+    text-overflow: ellipsis; /* Показывать многоточие для переполненных текстов */
+    white-space: nowrap; /* Не переносить текст на новую строку */
+  }
+  
+  .user-table th {
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+  
+  .resize-handle {
+    width: 2px; /* Ширина "ручки" изменения размера */
+    height: 100%; /* Высота "ручки" изменения размера */
+    background-color: #bdb9b9; /* Цвет "ручки" */
+    position: absolute;
+    right: 0; /* Расположение "ручки" справа от заголовка */
+    cursor: ew-resize; /* Курсор для изменения размера */
+    top: 0;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 16px;
+  }
+  
+  .error-code {
+    font-weight: bold;
+  }
+  
